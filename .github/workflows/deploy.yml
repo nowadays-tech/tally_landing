@@ -34,13 +34,8 @@ jobs:
       - name: Install Node.js dependencies
         run: npm ci
 
-      - name: Build Tailwind CSS
-        run: npx postcss assets/css/tailwind.css -o assets/css/tailwind.css
-
       - name: Build Jekyll site
-        run: bundle exec jekyll build
-        env:
-          JEKYLL_ENV: production
+        run: ./bin/build-prod
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
