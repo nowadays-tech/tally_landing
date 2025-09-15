@@ -1,6 +1,90 @@
 ---
 ---
 
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import "tailwindcss";
+
+@theme {
+  --color-blue-50: #f0f7fe;
+  --color-blue-100: #ddedfc;
+  --color-blue-200: #c2e0fb;
+  --color-blue-300: #98cef8;
+  --color-blue-400: #67b3f3;
+  --color-blue-500: #4493ed;
+  --color-blue-600: #2470e0; /* cobalt */
+  --color-blue-700: #2661cf;
+  --color-blue-800: #2550a8;
+  --color-blue-900: #234585;
+  --color-blue-950: #1a2c51;
+
+  --color-deep-cove-50: #e4f4ff;
+  --color-deep-cove-100: #cfe9ff;
+  --color-deep-cove-200: #a8d6ff;
+  --color-deep-cove-300: #74b8ff;
+  --color-deep-cove-400: #3e87ff;
+  --color-deep-cove-500: #1356ff;
+  --color-deep-cove-600: #0042ff;
+  --color-deep-cove-700: #0042ff;
+  --color-deep-cove-800: #003be4;
+  --color-deep-cove-900: #0028b0;
+  --color-deep-cove-950: #000b38; /* ink */
+
+  --color-indigo-50: #edf2ff;
+  --color-indigo-100: #dfe5ff;
+  --color-indigo-200: #CCD6FF; /* lavender */
+  --color-indigo-300: #a2b0ff;
+  --color-indigo-400: #7d86fc;
+  --color-indigo-500: #5858f5; /* purple */
+  --color-indigo-600: #4f41ea;
+  --color-indigo-700: #4233cf;
+  --color-indigo-800: #372ca7;
+  --color-indigo-900: #312b84;
+  --color-indigo-950: #1e1a4c;
+
+  --color-persimmon-50: #fff3f1;
+  --color-persimmon-100: #ffe5e0;
+  --color-persimmon-200: #ffcfc5;
+  --color-persimmon-300: #ffad9d;
+  --color-persimmon-400: #ff7f65;
+  --color-persimmon-500: #fe684a; /* salmon */
+  --color-persimmon-600: #ec3a16;
+  --color-persimmon-700: #c72d0e;
+  --color-persimmon-800: #a42910;
+  --color-persimmon-900: #882714;
+  --color-persimmon-950: #4a1005;
+
+  --color-earth-50: #f8f8f6; /* off-gray */
+  --color-earth-100: #edede7;
+  --color-earth-200: #d9d8cf;
+  --color-earth-300: #c1c1b0;
+  --color-earth-400: #a7a490;
+  --color-earth-500: #969279;
+  --color-earth-600: #89836d;
+  --color-earth-700: #726c5c;
+  --color-earth-800: #5e594e;
+  --color-earth-900: #4e4a40;
+  --color-earth-950: #292721;
+
+  --color-neutral-50: #f6f6f6;
+  --color-neutral-100: #e7e7e7;
+  --color-neutral-200: #d1d1d1;
+  --color-neutral-300: #b0b0b0;
+  --color-neutral-400: #888888;
+  --color-neutral-500: #6d6d6d;
+  --color-neutral-600: #5d5d5d;
+  --color-neutral-700: #4f4f4f;
+  --color-neutral-800: #454545;
+  --color-neutral-900: #3d3d3d;
+  --color-neutral-950: #292929; /* charcoal */
+
+  --color-yellow-50: #fefde8;
+  --color-yellow-100: #fdfac4;
+  --color-yellow-200: #fcf28c;
+  --color-yellow-300: #f9e44b;
+  --color-yellow-400: #f6d52c; /* primary */
+  --color-yellow-500: #e5b90d;
+  --color-yellow-600: #c69008;
+  --color-yellow-700: #9e670a;
+  --color-yellow-800: #835110;
+  --color-yellow-900: #6f4214;
+  --color-yellow-950: #412207;
+}
