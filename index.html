@@ -6,13 +6,13 @@ title: "Tally"
 <main class="min-h-dvh flex flex-col relative z-20 mb-[100dvh] bg-earth-50">
   <div class="">
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 pt-18 gap-y-12">
-      <div class="flex flex-col items-center gap-y-10">
+      <div class="flex flex-col items-center gap-y-8">
         <div class="flex items-center justify-center bg-neutral-100 rounded-full px-4 pl-8 py-1 w-fit relative">
           <i data-lucide="sparkle" class="size-4 absolute left-2"></i>
           <span class="text-sm font-medium">In private beta</span>
         </div>
         <h1 class="text-7xl font-thin font-serif">AI møder bogføring</h1>
-        <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
+        <p class="text-lg text-neutral-800">Tally is a bookkeeping platform.</p>
         <div class="flex items-center justify-center gap-x-4">
           <a href="#" class="text-sm bg-neutral-950 text-white px-4 py-2 rounded-md font-mono">Get started</a>
           <a href="#" class="text-sm text-neutral-950 font-mono hover:underline">Learn more</a>
@@ -30,60 +30,96 @@ title: "Tally"
   </div>
   <div>
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 gap-y-6">
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quasi quaerat ex. Molestias maxime sint necessitatibus incidunt exercitationem? Quos magnam mollitia vero, rem qui cum provident dolor architecto libero. Architecto.</h2>
+      <hr class="w-full border-neutral-200/50">
+    </div>
+  </div>
+  <div>
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 gap-y-4">
+      <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Skræddersyet til dig</h2>
+      <p class="text-lg text-neutral-900">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
     </div>
   </div>
   <div class="">
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 gap-y-12">
-      <div class="flex w-full">
-        <div class="flex flex-col gap-y-4">
-          <p class="text-neutral-500">Aldirg mere tekst her</p>
-          <h3 class="text-2xl font-medium">Bilagsindsamling</h3>
-          <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
+      {% for usp in site.data.usps %}
+        <div class="flex w-full">
+          <div class="flex flex-col gap-y-4 pr-12">
+            <p class="text-neutral-500 text-sm">{{ usp.feature }}</p>
+            <h3 class="text-2xl font-medium">{{ usp.benefit }}</h3>
+            <p class="text-lg text-neutral-800">{{ usp.description }}</p>
+            <ul class="list-disc list-inside">
+              {% for subfeature in usp.subfeatures %}
+                <li class="text-neutral-500">
+                  {{ subfeature.title }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="flex flex-col w-2/3 shrink-0">
+            <div class="bg-neutral-100/50 rounded-lg aspect-video w-full flex items-end justify-center">
+              <img class="w-4/5" src="{{ usp.image }}">
+            </div>
+          </div>
         </div>
-        <div class="flex flex-col w-2/3 shrink-0">
-          <div class="bg-neutral-100/50 rounded-lg aspect-video w-full"></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div>
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 gap-y-24">
+      <div class="flex flex-col items-center justify-center gap-y-4">
+        <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Kom igang på 5 minutter</h2>
+        <p class="text-lg text-neutral-900">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
+      </div>
+      <div class="w-full max-w-5xl mx-auto grid grid-cols-4 gap-x-4">
+        <div class="flex flex-col justify-between aspect-square p-6 bg-neutral-100">
+          <span class="text-5xl font-thin font-serif text-neutral-400">00:00</span>
+          <div class="flex flex-col">
+            <p class="text-lg">Start</p>
+            <p class="text-neutral-400">Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between aspect-square p-6 bg-blue-100">
+          <span class="text-5xl font-thin font-serif text-neutral-400">00:00</span>
+          <div class="flex flex-col">
+            <p class="text-lg">Start</p>
+            <p class="text-neutral-400">Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between aspect-square p-6 bg-indigo-100">
+          <span class="text-5xl font-thin font-serif text-neutral-400">00:00</span>
+          <div class="flex flex-col">
+            <p class="text-lg">Start</p>
+            <p class="text-neutral-400">Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between aspect-square p-6 bg-lime-100">
+          <span class="text-5xl font-thin font-serif text-neutral-400">00:00</span>
+          <div class="flex flex-col">
+            <p class="text-lg">Start</p>
+            <p class="text-neutral-400">Lorem ipsum</p>
+          </div>
         </div>
       </div>
-      <div class="flex w-full">
-        <div class="flex flex-col gap-y-4">
-          <p class="text-neutral-500">Aldirg mere tekst her</p>
-          <h3 class="text-2xl font-medium">Automatisk matching</h3>
-          <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
-        </div>
-        <div class="flex flex-col w-2/3 shrink-0">
-          <div class="bg-neutral-100/50 rounded-lg aspect-video w-full"></div>
-        </div>
-      </div>
-      <div class="flex w-full">
-        <div class="flex flex-col gap-y-4">
-          <p class="text-neutral-500">Aldirg mere tekst her</p>
-          <h3 class="text-2xl font-medium">Overfør til e-conomic</h3>
-          <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
-        </div>
-        <div class="flex flex-col w-2/3 shrink-0">
-          <div class="bg-neutral-100/50 rounded-lg aspect-video w-full"></div>
-        </div>
-      </div>
-      <div class="flex w-full">
-        <div class="flex flex-col gap-y-4">
-          <p class="text-neutral-500">Aldirg mere tekst her</p>
-          <h3 class="text-2xl font-medium">Kreditkort</h3>
-          <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
-        </div>
-        <div class="flex flex-col w-2/3 shrink-0">
-          <div class="bg-neutral-100/50 rounded-lg aspect-video w-full"></div>
-        </div>
-      </div>
-      <div class="flex w-full">
-        <div class="flex flex-col gap-y-4">
-          <p class="text-neutral-500">Aldirg mere tekst her</p>
-          <h3 class="text-2xl font-medium">Udlæg</h3>
-          <p class="text-lg text-neutral-800">Tally is a bookkeeping platform that uses AI to automate your accounting tasks.</p>
-        </div>
-        <div class="flex flex-col w-2/3 shrink-0">
-          <div class="bg-neutral-100/50 rounded-lg aspect-video w-full"></div>
-        </div>
+    </div>
+  </div>
+  <div>
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 gap-y-6">
+      <h2 class="text-4xl font-thin font-serif max-w-2xl text-center text-balance">Ofte stillede spørgsmål</h2>
+      <div class="w-full max-w-2xl mx-auto flex flex-col items-center justify-center py-32 gap-y-6">
+        <ul class="flex flex-col border-b border-neutral-200/50 w-full">
+          {% for faq in site.data.faq %}
+          <li x-data="{ open: false }" class="flex flex-col py-4 gap-y-4 border-t border-neutral-200/50">
+            <button @click="open = !open" class="flex items-center justify-between cursor-pointer">
+              <h3 class="text-xl font-medium">{{ faq.question }}</h3>
+              <i x-show="!open" data-lucide="chevron-down" class="size-5"></i>
+              <i x-show="open" data-lucide="chevron-up" class="size-5"></i>
+            </button>
+            <div x-show="open">
+              <p class="text-lg text-neutral-800">{{ faq.answer }}</p>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
     </div>
   </div>
@@ -101,9 +137,10 @@ title: "Tally"
       <div class="flex items-center gap-x-4">
         <a class="hover:underline" href="#">Privacy policy</a>
         <a class="hover:underline" href="#">Terms of service</a>
-        <a class="hover:underline" href="#">Cookie settings</a>
-        <a class="hover:underline" href="#">Imprint</a>
-        <a class="hover:underline" href="#">Contact</a>
+      </div>
+      <div class="flex items-center gap-x-4">
+        <a class="hover:underline" href="#">Linkedin</a>
+        <a class="hover:underline" href="#">Email</a>
       </div>
     </div>
   </div>

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }} | {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/tailwind.css" | relative_url }}">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
   </head>
   <body class="antialiased bg-neutral-950">
@@ -12,6 +13,7 @@
       {% include navigation.html %}
       {{ content }}
     </div>
+ 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
       lucide.createIcons();
