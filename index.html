@@ -49,7 +49,7 @@ title: "Tally"
             <p class="text-lg text-neutral-800">{{ usp.description }}</p>
             <ul class="list-disc list-inside">
               {% for subfeature in usp.subfeatures %}
-                <li class="text-neutral-500">
+                <li class="text-neutral-800">
                   {{ subfeature.title }}
                 </li>
               {% endfor %}
@@ -127,23 +127,31 @@ title: "Tally"
     </div>
   </div>
 </main>
-<footer class="bg-neutral-950 text-white fixed bottom-0 w-full z-10 h-dvh">
-  <div class="max-w-7xl mx-auto flex flex-col py-18 h-full relative">
-    <div class="absolute top-0 left-0 w-full h-full grid items-center justify-center ">
-      <span class="text-[30rem] font-medium text-neutral-700">Tally</span>
+<footer class="bg-blue-600 text-white fixed bottom-0 w-full z-10 h-dvh">
+  <div class="h-full w-full relative">
+    <div class="hidden absolute top-0 left-0 w-full h-full grid items-center justify-center ">
+      <span class="text-[40rem] leading-none font-medium text-neutral-700">Tally</span>
     </div>
-    <div class="grow flex flex-col gap-y-6">
-      <h3 class="text-5xl font-medium max-w-2xl text-balance">Kom igang i dag og spar utallige timer</h3>
-    </div>
-    <div class="flex items-center justify-between text-xs text-neutral-200">
-      <div><span>© {{ "now" | date: "%Y" }} Tally</span></div>
-      <div class="flex items-center gap-x-4">
-        <a class="hover:underline" href="#">Privacy policy</a>
-        <a class="hover:underline" href="#">Terms of service</a>
-      </div>
-      <div class="flex items-center gap-x-4">
-        <a class="hover:underline" href="#">Linkedin</a>
-        <a class="hover:underline" href="#">Email</a>
+    <div class="absolute bottom-0 left-0 w-full h-full">
+      <div class="max-w-7xl mx-auto flex flex-col py-18 h-full relative">
+        <div class="grow flex flex-col items-center gap-y-6">
+          <h3 class="text-7xl font-medium max-w-2xl text-center text-balance">Kom igang i dag og spar utallige timer</h3>
+          <p>med <span class="font-medium">Tally</span> kan du få bogføringen på autopilot.</p>
+          <div class="flex items-center justify-center">
+            <a href="#" class="text-sm bg-white text-neutral-950 px-4 py-2 rounded-md font-mono">Kom igang</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-xs text-white">
+          <div><span>© {{ "now" | date: "%Y" }} Tally</span></div>
+          <div class="flex items-center gap-x-4">
+            <a class="hover:underline" href="#">Privacy policy</a>
+            <a class="hover:underline" href="#">Terms of service</a>
+          </div>
+          <div class="flex items-center gap-x-4">
+            <a class="hover:underline" href="#">Linkedin</a>
+            <a class="hover:underline" href="#">Email</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
