@@ -8,11 +8,34 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
   </head>
-  <body class="antialiased bg-neutral-950">
-    <div class="flex flex-col bg-earth-50">
+  <body class="antialiased bg-earth-50">
+    <div class="flex flex-col px-4 2xl:px-0">
       {% include navigation.html %}
       {{ content }}
     </div>
+
+    <footer class="bg-neutral-950 text-white w-full">
+      <div class="max-w-7xl mx-auto flex flex-col gap-y-12 py-18 px-4 2xl:px-0">
+        <div class="grow flex flex-col items-center gap-y-6">
+          <h3 class="text-4xl lg:text-7xl font-medium max-w-2xl text-center text-balance">Kom igang i dag og spar utallige timer</h3>
+          <p>med <span class="font-medium">Tally</span> kan du få bogføringen på autopilot.</p>
+          <div class="flex items-center justify-center">
+            <a href="#" class="text-sm bg-white text-neutral-950 px-4 py-2 rounded-md font-mono">Kom igang</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between text-xs text-white border-t border-neutral-900 pt-8">
+          <div><span>© {{ "now" | date: "%Y" }} Tally</span></div>
+          <div class="flex items-center gap-x-4">
+            <a class="hover:underline" href="#">Privacy policy</a>
+            <a class="hover:underline" href="#">Terms of service</a>
+          </div>
+          <div class="flex items-center gap-x-4">
+            <a class="hover:underline" href="#">Linkedin</a>
+            <a class="hover:underline" href="#">Email</a>
+          </div>
+        </div>
+      </div>
+    </footer>
  
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
