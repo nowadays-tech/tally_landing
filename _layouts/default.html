@@ -4,11 +4,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.description }}">
     <link rel="stylesheet" href="{{ "/assets/css/tailwind.css" | relative_url }}">
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <!-- <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}"> -->
   </head>
-  <body class="antialiased bg-earth-50">
+  <body class="antialiased bg-earth-50 dark:bg-neutral-950 dark:text-white">
     <div class="flex flex-col px-4 2xl:px-0">
       {% include navigation.html %}
       {{ content }}
@@ -24,7 +25,7 @@
           </div>
         </div>
         <div class="flex items-center justify-between text-xs text-white border-t border-neutral-900 pt-8">
-          <div><span>© {{ "now" | date: "%Y" }} Tally</span></div>
+          <div><span>© {{ "now" | date: "%Y" }} Tally Financial Services ApS</span></div>
           <div class="flex items-center gap-x-4">
             <a class="hover:underline" href="#">Privacy policy</a>
             <a class="hover:underline" href="#">Terms of service</a>
