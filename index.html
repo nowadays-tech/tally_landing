@@ -30,33 +30,39 @@ title: "Fra bank til bogført, på autopilot."
   </div>
 
   <div>
-    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-32 gap-y-4">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 lg:py-32 gap-y-4">
       <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Slut med manuelle processer</h2>
-      <p class="text-lg text-neutral-900 dark:text-white">Tally er bogholderens bedste ven. Vi hjælper dig hvor Economic gav op.</p>
+      <p class="text-lg text-neutral-900 dark:text-white text-center">Tally er bogholderens bedste ven. Vi hjælper dig hvor Economic gav op.</p>
     </div>
   </div>
   <div class="">
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 gap-y-12">
       {% for usp in site.data.usps %}
-        <div class="flex w-full">
-          <div class="flex flex-col gap-y-4 pr-12">
+        <div class="w-full grid lg:grid-cols-3">
+          <div class="lg:col-span-1 gap-y-4 pb-6 lg:pr-12 lg:pb-0">
             <p class="text-neutral-500 dark:text-white text-sm">{{ usp.feature }}</p>
             <h3 class="text-2xl font-medium">{{ usp.benefit }}</h3>
             <p class="text-lg text-neutral-800 dark:text-white">{{ usp.description }}</p>
-            <div class="flex flex-col">
-              {% for subfeature in usp.subfeatures %}
-                <a href="{{ subfeature.path }}" class="text-neutral-800 dark:text-white hover:text-neutral-950 dark:hover:text-white hover:bg-neutral-50 dark:hover:bg-neutral-900 border-t border-neutral-100/50 py-4 last:border-b last:border-neutral-100/50">
-                  <p class="text-lg font-medium">{{ subfeature.title }}</p>
-                  <p class="text-neutral-800 dark:text-white text-sm">{{ subfeature.description }}</p>
-                </a>
-              {% endfor %}
-            </div>
+            
           </div>
-          <div class="flex flex-col lg:w-2/3 shrink-0">
+          <div class="lg:col-span-2 shrink-0">
             <div class="bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg aspect-video w-full flex items-end justify-center">
               <img class="w-4/5" src="{{ usp.image }}">
             </div>
           </div>
+        </div>
+
+        <div class="w-full grid lg:grid-cols-3 gap-y-6 lg:gap-x-6 border-b border-neutral-200/50 dark:border-neutral-900/50 pb-12">
+          {% for subfeature in usp.subfeatures %}
+            <div class="">
+              <p class="text-md font-medium">{{ subfeature.title }}</p>
+              <p class="text-neutral-800 dark:text-white mb-1">{{ subfeature.description }}</p>
+
+              {% if subfeature.path %}
+                <a href="{{ subfeature.path }}" class="text-sm font-mono hover:underline">Læs mere</a>
+              {% endif %}
+            </div>
+          {% endfor %}
         </div>
       {% endfor %}
     </div>
