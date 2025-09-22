@@ -1,6 +1,6 @@
 - feature: "Debitorstyring"
   benefit: "Slut med at afstemme banken når kunderne har betalt"
-  description: "Tally integrerer nemt med dine kunders banker og automatisk indlæser deres bilag."
+  description: "Dine kunder sender en faktura, og derefter køre alt automatisk."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
   subfeatures:
     - title: "Afstem automatisk betalinger"
