@@ -1,4 +1,4 @@
-url: "https://www.tally.financial" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.tally.inc" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Tally" # the name of your site, e.g. ACME Corp.
 
