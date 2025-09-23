@@ -100,7 +100,7 @@ title: "Fra bank til bogført, på autopilot."
     </div>
   </div>
   <div class="">
-    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 gap-y-12">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-18 gap-y-12">
       {% for usp in site.data.usps %}
         <div class="w-full grid lg:grid-cols-3">
           <div class="lg:col-span-1 gap-y-4 pb-6 lg:pr-12 lg:pb-0 flex flex-col gap-y-4">
@@ -115,23 +115,31 @@ title: "Fra bank til bogført, på autopilot."
             </div>
           </div>
         </div>
-
-        <div class="w-full grid lg:grid-cols-3 gap-y-6 lg:gap-x-6 border-b border-neutral-200/50 dark:border-neutral-500 pb-12">
-          {% for subfeature in usp.subfeatures %}
-            <div class="">
-              <h3 class="text-md font-semibold">{{ subfeature.title }}</h3>
-              <p class="text-neutral-800 dark:text-neutral-300 mb-1">{{ subfeature.description }}</p>
-
-              {% if subfeature.path %}
-                <a href="{{ subfeature.path }}" class="text-sm font-mono hover:underline">Læs mere</a>
-              {% endif %}
-            </div>
-          {% endfor %}
-        </div>
       {% endfor %}
     </div>
-    <div class="mx-auto max-w-7xl text-center mb-16">
-      <p class="text-sm text-neutral-600 dark:text-neutral-300">* funktionen er ved at blive bygget og kommer snart.</p>
+  </div>
+
+  <div class="max-w-7xl mx-auto border-t border-neutral-200/50 dark:border-neutral-500 py-18">
+    <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 lg:py-32 gap-y-4">
+      <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Alt hvad Tally kan</h2>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-y-12 lg:gap-x-12 pt-12">
+      {% for feature in site.data.features %}
+        <div class="">
+          <h3 class="text-md font-semibold">{{ feature.title }}</h3>
+          {% if feature.roadmap %}
+            <span class="flex items-center justify-center bg-neutral-100 dark:bg-neutral-900 rounded-full px-4 pl-7 py-1 my-1 w-fit relative">
+              <i data-lucide="gift" class="size-3 absolute left-2"></i>
+              <span class="text-xs font-mono font-medium">Under udvikling</span>
+            </span>
+          {% endif %}
+          <p class="text-neutral-800 dark:text-neutral-300 mb-1">{{ feature.description }}</p>
+
+          {% if feature.path %}
+            <a href="{{ feature.path }}" class="text-sm font-mono hover:underline">Læs mere</a>
+          {% endif %}
+        </div>
+      {% endfor %}
     </div>
   </div>
   <div class="hidden">
