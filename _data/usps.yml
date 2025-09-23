@@ -1,21 +1,14 @@
-- feature: "Bilagsindsamling"
-  benefit: "Jagten på bilag er ovre."
-  description: "Tally integrerer med din bank og automatisk indlæser dine bilag."
+- feature: "Kreditorstyring"
+  benefit: "Automatiseret håndtering af leverandørfakturaer og udgifter"
+  description: "Tally sørger for, at alle leverandørfakturaer og udgifter håndteres automatisk – fra indsamling af bilag til bogføring, betaling og afstemning. Som ekstern bogholder får du fuldt overblik og sparer tid på manuelle processer."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
-  subfeatures:
-    - title: "Automatisk indlæsning"
-    - title: "Automatisk indlæsning"
+
 - feature: "Debitorstyring"
-  benefit: "Automatisk opfølgning og afstemning af salgsfakturaer"
-  description: "Tally integrerer med din bank og automatisk indlæser dine bilag."
+  benefit: "Automatiseret fakturering og håndtering af kundebetalinger"
+  description: "Fra faktura til betaling – Tally automatiserer hele processen. Du slipper for manuelle afstemninger og får fuldt overblik over kundernes indbetalinger."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
-  subfeatures:
-    - title: "Automatisk indlæsning"
-    - title: "Automatisk indlæsning"
-- feature: "Fakturahåndtering"
-  benefit: "Ingen manuel indsættelse af bilag"
-  description: "Tally integrerer med din bank og automatisk indlæser dine bilag."
+
+- feature: "Bygget til eksterne bogholdere"
+  benefit: "Udviklet specifikt til dig som ekstern bogholder"
+  description: "Tally er designet til at imødekomme eksterne bogholderes behov – fra håndtering af mange kunders bilag til fuld automatisering af manuelle arbejdsgange. Det giver dig mere tid til at levere rådgivning og værdi til dine kunder."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
-  subfeatures:
-    - title: "Automatisk indlæsning"
-    - title: "Automatisk indlæsning"
