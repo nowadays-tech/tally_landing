@@ -1,14 +1,15 @@
 - feature: "Jagten på bilag tager lang tid"
-  benefit: "Gør bilagshåndtering til et nemt samarbejde med dine kunder"
-  description: "Tally sørger for, at alle leverandørfakturaer og udgifter håndteres automatisk – fra indsamling af bilag til bogføring, betaling og afstemning. Som ekstern bogholder får du fuldt overblik og sparer tid på manuelle processer."
-  image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
-
-- feature: "Bankafstemning er besværligt"
-  benefit: "Lad os gøre det automatisk"
-  description: "Fra faktura til betaling – Tally automatiserer hele processen. Du slipper for manuelle afstemninger og får fuldt overblik over kundernes indbetalinger."
+  benefit: "Gør bilagshåndtering nemt i samarbejde med dine kunder"
+  description: "Tally giver dig og dine kunder et nemt overblik over manglende bilag. Dine kunder bliver automatisk rykket for manglende bilag og når de uploader bilag bliver de automatisk bogført og tjekket af listen."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
 
 - feature: "Kontering er kompliceret"
-  benefit: "Udviklet specifikt til dig som ekstern bogholder"
-  description: "Tally er designet til at imødekomme eksterne bogholderes behov – fra håndtering af mange kunders bilag til fuld automatisering af manuelle arbejdsgange. Det giver dig mere tid til at levere rådgivning og værdi til dine kunder."
+  benefit: "Sæt dine kunders kontering på autopilot"
+  description: "Tally tager det tunge løft for dig: vi genkender bilag, foreslår de rigtige konteringer og bogfører automatisk, hvor det giver mening. Du bevarer overblikket og kan nemt godkende eller rette, mens systemet lærer af dine valg og bliver mere præcist for hver kunde. Så får du færre manuelle opgaver, højere kvalitet i bogføringen – og mere tid til at levere den rådgivning, dine kunder betaler for."
   image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
+
+- feature: "Bankafstemning er besværligt"
+  benefit: "Banken er allerede afstemt"
+  description: "Når der er styr på bilag og kontering er banken allerede afstemt. Kombinationen af vores automatiske fulde forståelse for dine kunders bilag og vores integration med alle danske banker gør at vi kan afstemme 95% af bankposteringer automatisk."
+  image: "https://cdn.prod.website-files.com/64ad3589e442a128dd0a7b83/66616e2c731fbb48af28ca77_vendor-database.png"
+

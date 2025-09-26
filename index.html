@@ -12,7 +12,7 @@ title: "Fra bank til bogført, på autopilot."
           <span class="text-sm font-medium">I privat beta</span>
         </div>
         <h1 class="max-w-2xl mx-auto text-center text-balance text-7xl font-thin font-serif">Fra bank til bogført, på autopilot.</h1>
-        <p class="max-w-2xl text-center text-lg text-neutral-800 dark:text-neutral-300">Træt af at bogføre alle dine kunders bilag manuelt? Du behøver ikke. Tally gør bilagshåndteringen, kontering, bankafstemning og bogføring for dine bogholderikunder automatisk.</p>
+        <p class="max-w-2xl text-center text-lg text-neutral-800 dark:text-neutral-300">Træt af at bogføre alle dine kunders bilag manuelt? Du behøver ikke. Tally gør bilagshåndteringen, kontering og bankafstemning til et automatiseret samarbejde med dine kunder så jeres bogføring kan automatiseres.</p>
         <div class="flex items-center justify-center gap-x-4">
           <a href="https://calendly.com/niklasstephenson/kom-igang-med-tally" class="text-sm bg-neutral-950 hover:bg-neutral-900 dark:bg-white hover:dark:bg-neutral-100 text-white dark:text-neutral-950 px-4 py-2 rounded-md font-mono">Kom i gang</a>
           <a href="#features" class="text-sm text-neutral-950 dark:text-white font-mono hover:underline">Læs mere</a>
@@ -103,11 +103,10 @@ title: "Fra bank til bogført, på autopilot."
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-18 gap-y-12">
       {% for usp in site.data.usps %}
         <div class="w-full grid lg:grid-cols-3">
-          <div class="lg:col-span-1 gap-y-4 pb-6 lg:pr-12 lg:pb-0 flex flex-col gap-y-4">
-            <p class="text-sm font-mono text-neutral-600 dark:text-neutral-400">{{ usp.feature }}</p>
+          <div class="lg:col-span-1 gap-y-2 pb-6 lg:pr-12 lg:pb-0 flex flex-col">
+            <p class="text-md font-mono text-neutral-600 dark:text-neutral-400">{{ usp.feature }}</p>
             <h3 class="text-2xl font-medium mb-3">{{ usp.benefit }}</h3>
             <p class="text-lg text-neutral-800 dark:text-neutral-300">{{ usp.description }}</p>
-            
           </div>
           <div class="lg:col-span-2 shrink-0">
             <div class="bg-neutral-100/50 dark:bg-neutral-800/50 rounded-lg aspect-video w-full flex items-end justify-center">
