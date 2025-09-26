@@ -12,20 +12,20 @@ title: "Fra bank til bogført, på autopilot."
           <span class="text-sm font-medium">I privat beta</span>
         </div>
         <h1 class="max-w-2xl mx-auto text-center text-balance text-7xl font-thin font-serif">Fra bank til bogført, på autopilot.</h1>
-        <p class="max-w-2xl text-center text-lg text-neutral-800 dark:text-white">Træt af at bogføre alle dine kunders bilag manuelt? Du behøver ikke. Tally gør bilagshåndteringen, kontering, bankafstemning og bogføring for dine bogholderikunder automatisk.</p>
+        <p class="max-w-2xl text-center text-lg text-neutral-800 dark:text-neutral-300">Træt af at bogføre alle dine kunders bilag manuelt? Du behøver ikke. Tally gør bilagshåndteringen, kontering, bankafstemning og bogføring for dine bogholderikunder automatisk.</p>
         <div class="flex items-center justify-center gap-x-4">
-          <a href="https://calendly.com/niklasstephenson/kom-igang-med-tally" class="text-sm bg-neutral-950 dark:bg-white text-white dark:text-neutral-950 px-4 py-2 rounded-md font-mono">Kom i gang</a>
+          <a href="https://calendly.com/niklasstephenson/kom-igang-med-tally" class="text-sm bg-neutral-950 hover:bg-neutral-900 dark:bg-white hover:dark:bg-neutral-100 text-white dark:text-neutral-950 px-4 py-2 rounded-md font-mono">Kom i gang</a>
           <a href="#features" class="text-sm text-neutral-950 dark:text-white font-mono hover:underline">Læs mere</a>
         </div>
       </div>
       <div class="container">
         <div class="mx-auto mt-24">
-          <p class="font-mono text-center dark:text-neutral-300">Vi integrerer direkte med din bank:</p>
+          <p class="text-sm font-mono text-neutral-600 dark:text-neutral-400 text-center">Vi integrerer direkte med din bank:</p>
         </div>
         <div class="relative mx-auto h-[52px] mdx:mt-[87px] mt-[35px] max-w-[1250px]">
           <div class="absolute inset-0 grid h-full w-full items-center gap-x-5 gap-y-8 lg:gap-y-0 grid-cols-3 sm:grid-cols-4 md:grid-cols-5">
             <div class="col-span-1 flex items-center justify-center" style="opacity: 1; transform: none;">
-              <svg class="text-neutral-600 dark:invert h-5 w-auto" viewBox="0 0 1920 195" xmlns="http://www.w3.org/2000/svg">
+              <svg class="text-neutral-600 dark:invert h-5 w-auto scale-90" viewBox="0 0 1920 195" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <style>.cls-1{fill: currentColor;}</style>
                 </defs>
@@ -96,15 +96,15 @@ title: "Fra bank til bogført, på autopilot."
   <div>
     <div id="features" class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 lg:py-32 gap-y-4">
       <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Slut med manuelle processer</h2>
-      <p class="text-lg text-neutral-900 dark:text-white text-center">Tally er bogholderens bedste ven. Vi hjælper dig hvor Economic kommer til kort.</p>
+      <p class="text-lg text-neutral-900 dark:text-neutral-300 text-center">Tally er bogholderens bedste ven. Vi hjælper dig hvor Economic kommer til kort.</p>
     </div>
   </div>
   <div class="">
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-18 gap-y-12">
       {% for usp in site.data.usps %}
         <div class="w-full grid lg:grid-cols-3">
-          <div class="lg:col-span-1 gap-y-2 pb-6 lg:pr-12 lg:pb-0 flex flex-col">
-            <p class="text-neutral-500 dark:text-white text-md font-mono">{{ usp.feature }}</p>
+          <div class="lg:col-span-1 gap-y-4 pb-6 lg:pr-12 lg:pb-0 flex flex-col gap-y-4">
+            <p class="text-sm font-mono text-neutral-600 dark:text-neutral-400">{{ usp.feature }}</p>
             <h3 class="text-2xl font-medium mb-3">{{ usp.benefit }}</h3>
             <p class="text-lg text-neutral-800 dark:text-neutral-300">{{ usp.description }}</p>
             
@@ -119,7 +119,7 @@ title: "Fra bank til bogført, på autopilot."
     </div>
   </div>
 
-  <div class="max-w-7xl mx-auto border-t border-neutral-200/50 dark:border-neutral-500 py-18">
+  <div class="max-w-7xl mx-auto dark:border-neutral-500 py-18">
     <div class="max-w-7xl mx-auto flex flex-col items-center justify-center py-16 lg:py-32 gap-y-4">
       <h2 class="text-5xl font-thin font-serif max-w-2xl text-center text-balance">Alt hvad Tally kan</h2>
     </div>
